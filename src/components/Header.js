@@ -1,25 +1,29 @@
-import React from 'react'
+import React from 'react';
 
-const linkStyle={
-  cursor:'pointer'
-}
 const Header = () => {
   return (
-    <div className='header-bg'>
-        <div>
-            <img src='./logo.png' alt='logo' width={30} style={{marginLeft:'15px'}}/>
-        </div>
-        <div className='header-text'>
-            <h6 style={linkStyle}>Home</h6>
-            <h6 style={linkStyle}>About Us</h6>
-            <h6 style={linkStyle}>Services</h6>
-            <h6 style={linkStyle}>Portfolio</h6>
-        </div>
-        <div>
-            <button style={{padding:'4px 8px',color:'#000000',background:'#fff',borderRadius:'20px',fontWeight:500}}>Contact Us</button>
-        </div>
-    </div>
-  )
-}
+    <div className="header-bg">
+      {/* Logo Section */}
+      <div className="flex items-center">
+        <img src='./logo.png' alt='logo' className='w-8 h-8 ml-4'/>
+      </div>
+      
+      {/* Navigation Links */}
+      <div className="flex flex-col md:flex-row md:space-x-6 text-white mt-2 md:mt-0">
+        <h6 className="cursor-pointer hover:underline">Home</h6>
+        <h6 className="cursor-pointer hover:underline">About Us</h6>
+        <h6 className="cursor-pointer hover:underline">Services</h6>
+        <h6 className="cursor-pointer hover:underline">Portfolio</h6>
+      </div>
 
-export default Header
+      {/* Contact Button */}
+      <div className="mt-2 md:mt-0">
+        <button className="px-4 py-2 text-black bg-white rounded-full font-medium hover:bg-gray-200">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
