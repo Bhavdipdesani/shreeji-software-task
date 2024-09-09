@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.background-image{
+  background-image: url('../public/Home-banner.png');
+}
+.bg-image{
+  background-image: url('../public/banner.png');
+}
+.header-bg {
+  background-color: rgb(255, 255, 255, 0.154);
+  color: #fff;
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+}
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  color: #fff;
+}
+
+.home-bottom-component {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.354);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  padding: 25px;
+  align-items: start;
+  flex-direction: column;
+  justify-content:flex-end;
+  font-weight: bold;
+  /* position: absolute;
+  left: 0%;
+  bottom: 0%; */
+  z-index: 2;
+  width: 100%;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
